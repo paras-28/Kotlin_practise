@@ -9,6 +9,7 @@ fun main() {
 class Automobile(val name: String, val type: String , var kmRan: Int,  hasAirBags: Boolean) //properties
 {
 
+    var  doItHaveSafety :Boolean = hasAirBags
 
 
     constructor (nameParam: String , kmRan: Int) :
