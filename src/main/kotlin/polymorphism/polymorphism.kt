@@ -11,7 +11,7 @@ fun main() {
 * */
 
 
-open class Mobile2(val type: String) {
+  open class Mobile2(val type: String) {
     open fun display() = println("Simple Mobile Display")
 
 }
@@ -20,6 +20,10 @@ open class Mobile2(val type: String) {
 class OnePlus2(typeParam: String) : Mobile2(typeParam) {
 
     override fun display() = println("One Plus Display")
+}
+internal class Samsung(typeParam: String) : Mobile2(typeParam) {
+
+    override fun display() = println("Samsung Display")
 }
 
 
