@@ -1,6 +1,5 @@
 fun main() {
     val obj : Parent = Child(typeParam = "Smart ")
-    val obj2 = Mobile(typeParam = "Smart ")
     obj.display()
 
 }
@@ -13,7 +12,7 @@ private interface MyInterface {
 }
 
 
- private abstract   class Parent(val type: String) : MyInterface  {
+  abstract   class Parent(val type: String) : MyInterface  {
    abstract  fun display()
      fun display2()
      {

@@ -1,11 +1,13 @@
 
 
+/*
 fun main() {
     var oneplus : Mobile2 = Samsung( "Smart ")
     oneplus.display()
     var generalMobile  = Mobile2( type ="General")
     generalMobile.display()
 }
+*/
 
 
 fun main() {
