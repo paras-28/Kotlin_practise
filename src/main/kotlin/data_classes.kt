@@ -3,7 +3,7 @@ fun main() {
     val obj2 = Human(age = 25, name = "Paras")
      println(obj == obj2)
     var obj3 = obj2.copy(name = "John")
-    
+
 }
 
 
