@@ -13,6 +13,8 @@ fun main() {
    var obj: (num1: Int, num2: Int) -> Int = ::subtraction
 
 
+
+    println(addVarArg(1,4,5,6,7,89))
     // can't assign when overloading
 //Overload resolution ambiguity. All these functions match.
 //   var obj2   = ::add
@@ -31,6 +33,14 @@ fun main() {
 fun add(num1: Int): Number {
     val sum = num1 + 5
     return sum
+}
+fun addVarArg(vararg arg: Int): Number {
+    var result = 0;
+   for(i in arg)
+   {
+       result += i
+   }
+    return result
 }
 
 
