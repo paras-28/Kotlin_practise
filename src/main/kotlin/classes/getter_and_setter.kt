@@ -22,7 +22,6 @@ class Person2 (nameParam: String, ageParam: Int) {
                 field = value
             } else {
                 println("Age can't be negative")
-                0 - 0 - 0
             }
         }
 }

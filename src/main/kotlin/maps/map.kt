@@ -7,13 +7,23 @@ fun main() {
     data.put(2, "PARAS3")
 
     for ((key, value) in data) {
-        println("at index ${key} = $value")
+//        println("at index ${key} = $value")
     }
 
 
     // List
     var list = mutableListOf<Int>(1, 2, 3)
     // this is immutable
-    var list2 = listOf<Int>(1, 2, 3)
+    var list2 = listOf<Int>(1, 2, 3, 4, 5)
 
+    // collection functionality
+  var newOddList  =   list2.filter(fun (a : Int) : Boolean
+  {
+      return a%2 !=0
+  })
+    println(newOddList)
+
+    var newList2 = list2.map(fun (e): Int {
+        return e*2;
+    })
 }

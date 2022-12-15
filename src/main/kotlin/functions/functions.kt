@@ -18,7 +18,7 @@ fun main() {
 //   var obj2   = ::add
 }
 
-fun add(num1: Int, num2: Int = 9): Number {
+ fun add(num1: Int, num2: Int = 9): Number {
     val sum = num1 + num2
     return sum
 }

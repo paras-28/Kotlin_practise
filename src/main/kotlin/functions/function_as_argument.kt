@@ -5,6 +5,11 @@ fun main() {
 
      acceptFunAsArg(10, fun1)
 
+     acceptFunAsArg(10, fun (arg :Int ) : Number
+     {
+         return arg+5
+     })
+
     var singleLineLambda = { x: Int, y: Int -> x + y }
 
     var singleLineLambda2 : (Int, Int)-> Number = { x, y -> x + y }
@@ -21,7 +26,8 @@ fun main() {
 //    var obj3 = acceptFunAsArg(10 , )
 }
 
-private fun addF(num1: Int): Number {
+// inline keyword to save memory
+private inline fun addF(num1: Int): Number {
     val sum = num1 + 5
     return sum
 }
